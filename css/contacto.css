@@ -1,0 +1,43 @@
+body
+{
+    background-color: #dba7c4;
+}
+nav
+{
+    background-color: #000000;
+}
+
+.nav-link
+{
+    color: white;
+}
+#contact {
+    background-color: #000000;
+    color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

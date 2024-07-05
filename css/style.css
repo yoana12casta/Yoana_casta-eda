@@ -1,0 +1,122 @@
+nav
+{
+    background-color: #db9f92;
+}
+
+.nav-link
+{
+    color: white;
+}
+
+/*----------------*/
+.c-item
+{
+    height: 480px;
+}
+.c-img
+{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/*-------------------*/
+.container 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 1000%;
+    gap: 20px; 
+}
+
+.card 
+{
+    width: 600px;
+    height: 420px; 
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card .image-box 
+{
+    overflow: hidden;
+    width: 600px;
+    height: 420px;
+}
+
+.card .image-box img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    transition: 0.5s ease-in-out;
+}
+
+.card::after 
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.card:hover img 
+{
+    filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after 
+{
+    opacity: 1;
+    inset: 20px;
+}
+
+.content 
+{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.card:hover .content 
+{
+    color: #fff;
+    opacity: 1;
+}
+
+
+/* footer */
+#main-footer 
+{
+    background-color: #6c1e74;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer-container 
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer2
+{
+    display: flex;
+    justify-content: center;
+
+}
